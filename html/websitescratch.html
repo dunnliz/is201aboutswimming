@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/scratch_styles.css">
     <!-- <link rel="index" href="../index.html"/> -->
     <link rel="homepage" href="resumeutahswim.html"/>
-    <link rel="stylesheet" href="../bootstrap2.0.html">
+    <link rel="stylesheet" href="../index.html">
 </head>
 <body>
 
@@ -61,8 +61,6 @@
             <h2>Optimal Form for Freestyle</h2>
             
             <div class="content-card">
-                <!-- REQUIRED: At least one image not from the Bootstrap theme -->
-                <!-- Placeholder image for a graphic detailing proper freestyle arm pull -->
                 <img src="../assets/img/home-bg.jpg" 
                      alt="Diagram showing the high-elbow underwater pull path in freestyle." 
                      class="technique-image">
@@ -70,8 +68,6 @@
             </div>
             <div class="content-card">
                 <h3>The Power of the Dolphin Kick</h3>
-                <!-- REQUIRED: Embedded YouTube video (using a sample video ID) -->
-                <!-- The iframe structure is the standard way to embed YouTube -->
                 <iframe width="560" 
                 height="315" 
                 src="https://www.youtube.com/embed/x0S1qpvdTNM?si=Zm4lMAcx6c4qHQ59" 
@@ -87,7 +83,6 @@
 
         <section id="tableau-viz">
             <h2>Swimming Data Analysis</h2>
-            <!-- REQUIRED: Live and interactive embedded Tableau graph -->
             <p>Explore the data on Olympic medal times across different swimming events. This found publicly on Tableau Public.</p>
             
 
@@ -107,11 +102,9 @@
                  var vizElement = divElement.getElementsByTagName('object')[0];
                  function resizeViz() {
                      var w = divElement.offsetWidth || divElement.clientWidth;
-                     // make embed fill container width and use a 4:3 (0.75) aspect ratio for height
                      vizElement.style.width = '100%';
                      vizElement.style.height = Math.max(400, Math.round(w * 0.75)) + 'px';
                  }
-                 // initial resize and on window resize
                  resizeViz();
                  window.addEventListener('resize', resizeViz);
                  var scriptElement = document.createElement('script');
@@ -134,15 +127,11 @@
 
     </div>
 
-    <!-- REQUIRED: Div 3 for Navigation/Footer -->
     <div class="footer-div">
         <p>&copy; 2023 </p>
         <nav>
-            <!-- REQUIRED: Navigation back to professional-looking pages (index.html is assumed) -->
-            
-            <!-- Link to the AI Web App -->
             <a href="Ai.html" class="nav-link">Swimming Pace Calculator (NEW AI App) →</a>
-            <a href="../bootstrap2.0.html" class="nav-link">← Swimming Lessons in Utah</a>
+            <a href="../index.html" class="nav-link">← Swimming Lessons in Utah</a>
             <a href="resumeutahswim.html" class="nav-link">Out of State Swimming Lessons →</a>
         </nav>
     </div>

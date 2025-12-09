@@ -1,17 +1,14 @@
-/* Custom styles.css additions for a better scrolling experience */
+
 html {
-    /* Adjusts scroll position to account for the sticky navbar height */
-    scroll-padding-top: 5rem; /* Increased from 3.5rem to 5rem for better spacing */
+    scroll-padding-top: 5rem; 
 }
 
 header {
-    /* Use padding-top and padding-bottom to create vertical space */
     padding-top: 5rem; 
     padding-bottom: 5rem;
 }
 
 section {
-    /* Use a consistent padding on all sections, replaced the old values */
     padding-top: 4rem; 
     padding-bottom: 4rem;
 }
