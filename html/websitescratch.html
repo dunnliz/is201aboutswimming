@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All about swimming</title>
+    <link rel="stylesheet" href="../css/scratch_styles.css">
+    <!-- <link rel="index" href="../index.html"/> -->
+    <link rel="homepage" href="resumeutahswim.html"/>
+    <link rel="stylesheet" href="../bootstrap2.0.html">
+</head>
+<body>
+
+    <div class="header-div">
+        <h1>All About Swimming </h1>
+        <p>A deep dive into the techniques for the best swimming.</p>
+        <a href="#tableau-viz" class="nav-link">Jump to Swimming Data Analysis</a>
+    </div>
+
+  
+    <div class="content-div">
+
+        <section class="technique-section">
+            <h2>Fundamental Strokes & Techniques</h2>
+            <p>Understanding the four competitive strokes is the foundation of effective swimming. Each requires a unique blend of power and hydrodynamics.</p>
+            
+            <h3>Overview of the Four Strokes</h3>
+            <p>Here are the four main swimming strokes used in competitive swimming, each with its own techniques and purposes:</p>
+            <ol>
+                <li>
+                    <h3>Freestyle</h3>
+                    <p>The fastest stroke, characterized by continuous arm rotation and flutter kick. Key focus areas include body rotation and high-elbow pull.</p>
+                    <ul>
+                        <li>High-Elbow Catch (Early vertical forearm)</li>
+                        <li>With a Symmetrical Body Rotation</li>
+                        <li>Consistent 6 or 8-Beat Kick Timing Depending on Your Size</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Backstroke</h3>
+                    <p>A stroke performed on the back, offering excellent lung capacity practice. Look for consistent hand entry outside the shoulder line.</p>
+                </li>
+                <li>
+                    <h3>Breaststroke</h3>
+                    <p>The slowest, but most complex, stroke. It involves a pull and kick synchronization often referred to as a 'glide' phase.
+                        This stroke is all about the timing between the pull and kick. If you are slightly off you will be too fast, and if you move your arms to fast you will spin water. 
+                    </p>
+                </li>
+                <li>
+                    <h3>Butterfly</h3>
+                    <p>A physically demanding stroke requiring a powerful, dolphin kick and simultaneous arm pull.
+                    Focus on rhythm for efficiency. Strong lats required.
+                    </p>
+                </li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section class="visual-section">
+            <h2>Optimal Form for Freestyle</h2>
+            
+            <div class="content-card">
+                <!-- REQUIRED: At least one image not from the Bootstrap theme -->
+                <!-- Placeholder image for a graphic detailing proper freestyle arm pull -->
+                <img src="../assets/img/home-bg.jpg" 
+                     alt="Diagram showing the high-elbow underwater pull path in freestyle." 
+                     class="technique-image">
+                <p>This image highlights the best arm position, maximizing your speed.</p>
+            </div>
+            <div class="content-card">
+                <h3>The Power of the Dolphin Kick</h3>
+                <!-- REQUIRED: Embedded YouTube video (using a sample video ID) -->
+                <!-- The iframe structure is the standard way to embed YouTube -->
+                <iframe width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/x0S1qpvdTNM?si=Zm4lMAcx6c4qHQ59" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen></iframe>
+                <p>Learn the core engagement required to execute a star butterfly and underwater dolphin kick.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="tableau-viz">
+            <h2>Swimming Data Analysis</h2>
+            <!-- REQUIRED: Live and interactive embedded Tableau graph -->
+            <p>Explore the data on Olympic medal times across different swimming events. This found publicly on Tableau Public.</p>
+            
+
+            <div class='tableauPlaceholder' id='viz1764806911468' style='position: relative'><noscript><a 
+            href='#'><img alt='Top Times ' 
+            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sw&#47;SwimmingWorldRecords&#47;TopTimes&#47;1_rss.png' 
+            style='border: none' /></a></noscript><object 
+            class='tableauViz'  
+            style='display:none;'><param 
+            name='host_url' 
+            value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param 
+            name='embed_code_version' value='3' /> <param name='site_root' value='' /><param 
+            name='name' value='SwimmingWorldRecords&#47;TopTimes' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sw&#47;SwimmingWorldRecords&#47;TopTimes&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
+                <script type='text/javascript'>
+             (function() {
+                 var divElement = document.getElementById('viz1764806911468');
+                 var vizElement = divElement.getElementsByTagName('object')[0];
+                 function resizeViz() {
+                     var w = divElement.offsetWidth || divElement.clientWidth;
+                     // make embed fill container width and use a 4:3 (0.75) aspect ratio for height
+                     vizElement.style.width = '100%';
+                     vizElement.style.height = Math.max(400, Math.round(w * 0.75)) + 'px';
+                 }
+                 // initial resize and on window resize
+                 resizeViz();
+                 window.addEventListener('resize', resizeViz);
+                 var scriptElement = document.createElement('script');
+                 scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                 vizElement.parentNode.insertBefore(scriptElement, vizElement);
+             })();
+             </script>
+            
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1700414441000');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
+                else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
+                else { vizElement.style.width='100%';vizElement.style.height='727px';} 
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+        </section>
+
+    </div>
+
+    <!-- REQUIRED: Div 3 for Navigation/Footer -->
+    <div class="footer-div">
+        <p>&copy; 2023 </p>
+        <nav>
+            <!-- REQUIRED: Navigation back to professional-looking pages (index.html is assumed) -->
+            
+            <!-- Link to the AI Web App -->
+            <a href="Ai.html" class="nav-link">Swimming Pace Calculator (NEW AI App) →</a>
+            <a href="../bootstrap2.0.html" class="nav-link">← Swimming Lessons in Utah</a>
+            <a href="resumeutahswim.html" class="nav-link">Out of State Swimming Lessons →</a>
+        </nav>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swim Pace Tracker</title>
+    <link rel="stylesheet" href="../css/ai.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Swimming Pace Calculator</h1>
+        <p>Enter your swim details below to find your 100m pace.</p>
+
+        <div class="form-group">
+            <label for="distance">Distance Swam (meters):</label>
+            <input type="number" id="distance" placeholder="e.g., 1500" min="1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="minutes">Time (Minutes):</label>
+            <input type="number" id="minutes" placeholder="e.g., 30" min="0" required>
+        </div>
+        <div class="form-group">
+            <label for="seconds">Time (Seconds):</label>
+            <input type="number" id="seconds" placeholder="e.g., 45" min="0" max="59" required>
+        </div>
+        
+        <button onclick="calculatePace()">Calculate Pace</button>
+
+        <div id="result">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
